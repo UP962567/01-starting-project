@@ -19,7 +19,7 @@
     <p id="fallback">Select a user to view their tasks</p>
     } -->
 
-    <app-task *ngIf="selectedUser; else fallback" [name]="selectedUser.name" [avatar]="selectedUser.avatar" [id]="selectedUser.id" />
+    <app-task *ngIf="selectedUser; else fallback" [name]="selectedUser.name" [userId]="selectedUser.id" />
     <ng-template #fallback>
         <p id="fallback">Select a user to view their tasks</p>
     </ng-template>
